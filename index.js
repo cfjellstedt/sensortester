@@ -48,10 +48,9 @@ function callThingApi () {
       res.on('end', () => {
         // After all the data has been received parse the JSON for desired data
         let response = JSON.parse(body);
-        let temp = response.feeds.field1;
+        let temp = response.channel.id;
         // Create response
-        //let output = 'The temperature is ' + temp;
-		let output = response;
+        let output = 'The temperature is ' + temp;
 
         // Resolve the promise with the output text
         console.log(output);
