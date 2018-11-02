@@ -50,7 +50,8 @@ function callThingApi () {
         let response = JSON.parse(body);
         let temp = response.feeds.field1;
         // Create response
-        let output = 'The temperature is ' + temp;
+        //let output = 'The temperature is ' + temp;
+		let output = response;
 
         // Resolve the promise with the output text
         console.log(output);
